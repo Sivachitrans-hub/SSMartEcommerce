@@ -13,7 +13,7 @@ struct SSMartEcomApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ProductsHomeView()
+            ViewCoordinator()
                
         }
     }

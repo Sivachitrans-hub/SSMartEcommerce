@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+
+class APIManager {
+    
+    // Base URL for the API
+    
+    static let baseURL = "https://fakestoreapi.com/"
+    static let productsURL = baseURL + "products"
+    
+    
+    
+}
+

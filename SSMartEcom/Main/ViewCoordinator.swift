@@ -16,11 +16,7 @@ struct ViewCoordinator: View {
     
     var body: some View {
         if splashActive {
-            if isOnboardCompleted {
-                ProductsHomeView()
-            }else{
-                OnboardView()
-            }
+            ProductsHomeView()
         }else {
             SplashScreen(isActive: $splashActive)
         }

@@ -1,12 +1,21 @@
+//
+//  SplashScreen.swift
+//  SSMartEcom
+//
+//  Created by siva chitran p on 01/02/25.
+//
+
+
 import SwiftUI
 
 struct SplashScreen: View {
+    
     @State private var scale = 0.5
     @Binding var isActive : Bool
     
     var body: some View {
         ZStack {
-            VStack(spacing:0) {
+            VStack(spacing:10) {
                 Image(.splashIcon)
                     .resizable()
                     .scaledToFit()
