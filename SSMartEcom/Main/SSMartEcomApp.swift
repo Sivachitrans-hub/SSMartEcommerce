@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct SSMartEcomApp: App {
    
-
     var body: some Scene {
         WindowGroup {
             ViewCoordinator()

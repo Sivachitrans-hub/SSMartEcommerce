@@ -12,7 +12,7 @@ enum NetworkError: Error {
     case invalidURL
     case invalidResponse
     case decodingError(String)
-    
+    case noInternet
 }
 
 
@@ -24,6 +24,11 @@ class NetworkManager {
     
     // MARK: - Fetch Data using async/await
     func fetchData<T: Decodable>(type:T.Type,from endpoint: String) async throws -> T {
+        
+        let isConnected = await NetworkMonitor.shared.checkConnectivity()
+        guard isConnected else {
+            throw NetworkError.noInternet
+        }
         
         guard let url = URL(string: "\(endpoint)") else {
             throw NetworkError.invalidURL
