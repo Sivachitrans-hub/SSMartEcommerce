@@ -11,7 +11,8 @@ import Combine
 @MainActor
 class ProductsViewModel : ObservableObject {
     
-    @Published var products : [ProductsModel] = []
+    
+    private var products : [ProductsModel] = []
     private var cancellables = Set<AnyCancellable>()
     @Published var searchText =  ""
     @Published var filteredItems:[ProductsModel] = []
@@ -19,8 +20,8 @@ class ProductsViewModel : ObservableObject {
     @Published var showLoader:Bool = true
     var message : String = ""
     
+
     init() {
-        // Observe searchText changes and update filteredItems
         $searchText
             .debounce(for: .milliseconds(300), scheduler: RunLoop.main) // Avoid rapid updates
             .removeDuplicates()

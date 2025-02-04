@@ -41,13 +41,12 @@ struct SSMartEcomGridViewCell : View {
             
             
             HStack(spacing: 0) {
-                StarRatingView(rating: .constant(2.5), maxRating: 5)
+                StarRatingView(rating:.constant(product.rating?.rate ?? 0.0) , maxRating: 5)
                 Spacer() // Pushes price to right side
                 
                 Text("(\(product.rating?.count ?? 0))")
                     .font(.poppins(.medium, size: 10))
                     .foregroundStyle(.secondary)
-                
             }
             
             .padding(.top,10)
@@ -63,10 +62,7 @@ struct SSMartEcomGridViewCell : View {
                 }
                 .padding(.vertical,10)
                 .padding(.horizontal)
-            
         }
-        
-        
         .background(.appBgSecondary)
         .cornerRadius(12)
        

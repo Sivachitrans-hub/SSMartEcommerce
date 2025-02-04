@@ -18,6 +18,8 @@ struct ProductsSearchView : View {
             
             TextField("Search products", text: $searchText)
                 .font(.poppins(.medium, size: 15))
+                .autocorrectionDisabled(true)
+                .textInputAutocapitalization(.words)
         }
         .padding(.horizontal)
         .frame(height: 50)

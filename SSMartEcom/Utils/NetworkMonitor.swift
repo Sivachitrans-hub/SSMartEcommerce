@@ -7,13 +7,16 @@
 
 
 import Network
+import SwiftUI
+import Reachability
+
 
 class NetworkMonitor {
     static let shared = NetworkMonitor()
     
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue.global(qos: .background)
-    private var isConnected: Bool = false
+     var isConnected: Bool = false
     private var continuation: CheckedContinuation<Bool, Never>?
     
     private init() {
@@ -34,3 +37,4 @@ class NetworkMonitor {
         }
     }
 }
+

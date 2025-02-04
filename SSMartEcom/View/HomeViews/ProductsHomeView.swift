@@ -13,6 +13,7 @@ struct ProductsHomeView: View {
 
     @ObservedObject var productsVM = ProductsViewModel()
     
+    
     var body: some View {
         ZStack {
             Color(.appBgPrimary)
@@ -22,7 +23,6 @@ struct ProductsHomeView: View {
                 ProductsSearchView(searchText: $productsVM.searchText)
                 if productsVM.filteredItems.isEmpty {
                     VStack(spacing:15) {
-                       
                         if productsVM.showLoader {
                             ProgressView()
                         }else {
@@ -32,7 +32,7 @@ struct ProductsHomeView: View {
                             .font(.poppins(.medium, size: 20))
                         }
                     }
-                    .foregroundStyle(Color.appTextSecondary)
+                    .foregroundStyle(.appTextSecondary)
                     .frame(maxHeight: .infinity,alignment: .center)
                     
                 }else {
@@ -42,8 +42,7 @@ struct ProductsHomeView: View {
                         }
                     })
                 }
-                
-                Spacer()
+              Spacer()
             }
         }
         .onAppear {

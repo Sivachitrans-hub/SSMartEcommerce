@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5130817B2D5104A200756969 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 5130817A2D5104A200756969 /* Reachability */; };
 		5168561A2D4F67AE00BA8C79 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 516856192D4F67AE00BA8C79 /* SDWebImageSwiftUI */; };
 		5168561C2D4F6C5A00BA8C79 /* ProductsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5168561B2D4F6C5A00BA8C79 /* ProductsGridView.swift */; };
 		5168561E2D4F6C7800BA8C79 /* SSMartEcomGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5168561D2D4F6C7800BA8C79 /* SSMartEcomGridViewCell.swift */; };
@@ -16,7 +17,6 @@
 		517CA52D2D4E684300A6A199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517CA5212D4E684300A6A199 /* Assets.xcassets */; };
 		517CA5352D4E6B4B00A6A199 /* ProductsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517CA5342D4E6B4B00A6A199 /* ProductsHomeView.swift */; };
 		5199657F2D4E71D400CA5F51 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5199657E2D4E71D400CA5F51 /* ViewCoordinator.swift */; };
-		519965812D4E720200CA5F51 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519965802D4E720200CA5F51 /* AppStorageKeys.swift */; };
 		519965852D4E72A000CA5F51 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519965842D4E72A000CA5F51 /* SplashScreen.swift */; };
 		519965872D4E731200CA5F51 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519965862D4E731200CA5F51 /* Extensions.swift */; };
 		519965892D4E783600CA5F51 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519965882D4E783600CA5F51 /* Colors.xcassets */; };
@@ -62,7 +62,6 @@
 		517CA5252D4E684300A6A199 /* SSMartEcomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSMartEcomApp.swift; sourceTree = "<group>"; };
 		517CA5342D4E6B4B00A6A199 /* ProductsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsHomeView.swift; sourceTree = "<group>"; };
 		5199657E2D4E71D400CA5F51 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
-		519965802D4E720200CA5F51 /* AppStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKeys.swift; sourceTree = "<group>"; };
 		519965842D4E72A000CA5F51 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		519965862D4E731200CA5F51 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		519965882D4E783600CA5F51 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5168561A2D4F67AE00BA8C79 /* SDWebImageSwiftUI in Frameworks */,
+				5130817B2D5104A200756969 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +106,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		516856232D4F9D3100BA8C79 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				5168561F2D4F6C9200BA8C79 /* StarRatingView.swift */,
+				5168561D2D4F6C7800BA8C79 /* SSMartEcomGridViewCell.swift */,
+				5168561B2D4F6C5A00BA8C79 /* ProductsGridView.swift */,
+				5199659C2D4E8CCD00CA5F51 /* ProductsSearchView.swift */,
+				5199659A2D4E881E00CA5F51 /* ProductsHeaderView.swift */,
+				517CA5342D4E6B4B00A6A199 /* ProductsHomeView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
 		517CA4E42D4E480D00A6A199 = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				516856212D4F8F1D00BA8C79 /* NetworkMonitor.swift */,
-				519965802D4E720200CA5F51 /* AppStorageKeys.swift */,
 				519965862D4E731200CA5F51 /* Extensions.swift */,
 				519965962D4E796900CA5F51 /* FontHandler.swift */,
 				519965982D4E7DEC00CA5F51 /* NetworkManager.swift */,
@@ -180,12 +192,7 @@
 		517CA5322D4E69CE00A6A199 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5168561F2D4F6C9200BA8C79 /* StarRatingView.swift */,
-				5168561D2D4F6C7800BA8C79 /* SSMartEcomGridViewCell.swift */,
-				5168561B2D4F6C5A00BA8C79 /* ProductsGridView.swift */,
-				5199659C2D4E8CCD00CA5F51 /* ProductsSearchView.swift */,
-				5199659A2D4E881E00CA5F51 /* ProductsHeaderView.swift */,
-				517CA5342D4E6B4B00A6A199 /* ProductsHomeView.swift */,
+				516856232D4F9D3100BA8C79 /* HomeViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +236,7 @@
 			name = SSMartEcom;
 			packageProductDependencies = (
 				516856192D4F67AE00BA8C79 /* SDWebImageSwiftUI */,
+				5130817A2D5104A200756969 /* Reachability */,
 			);
 			productName = SSMartEcom;
 			productReference = 517CA4ED2D4E480D00A6A199 /* SSMartEcom.app */;
@@ -308,6 +316,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				516856182D4F67AE00BA8C79 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				513081792D5104A200756969 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 517CA4EE2D4E480D00A6A199 /* Products */;
@@ -369,7 +378,6 @@
 				5199659B2D4E881E00CA5F51 /* ProductsHeaderView.swift in Sources */,
 				516856202D4F6C9200BA8C79 /* StarRatingView.swift in Sources */,
 				5199659F2D4E9C8A00CA5F51 /* ProductsModel.swift in Sources */,
-				519965812D4E720200CA5F51 /* AppStorageKeys.swift in Sources */,
 				5199657F2D4E71D400CA5F51 /* ViewCoordinator.swift in Sources */,
 				517CA5352D4E6B4B00A6A199 /* ProductsHomeView.swift in Sources */,
 				519965872D4E731200CA5F51 /* Extensions.swift in Sources */,
@@ -699,6 +707,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		513081792D5104A200756969 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alecrim/Reachability.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
 		516856182D4F67AE00BA8C79 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -710,6 +726,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5130817A2D5104A200756969 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 513081792D5104A200756969 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
 		516856192D4F67AE00BA8C79 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 516856182D4F67AE00BA8C79 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;

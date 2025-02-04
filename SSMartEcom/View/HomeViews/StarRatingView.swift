@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StarRatingView: View {
+    
     struct ClipShape: Shape {
         let width: Double
         
