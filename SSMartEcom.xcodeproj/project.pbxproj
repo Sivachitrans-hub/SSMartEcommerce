@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5130817B2D5104A200756969 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 5130817A2D5104A200756969 /* Reachability */; };
 		5168561A2D4F67AE00BA8C79 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 516856192D4F67AE00BA8C79 /* SDWebImageSwiftUI */; };
 		5168561C2D4F6C5A00BA8C79 /* ProductsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5168561B2D4F6C5A00BA8C79 /* ProductsGridView.swift */; };
 		5168561E2D4F6C7800BA8C79 /* SSMartEcomGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5168561D2D4F6C7800BA8C79 /* SSMartEcomGridViewCell.swift */; };
@@ -85,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5168561A2D4F67AE00BA8C79 /* SDWebImageSwiftUI in Frameworks */,
-				5130817B2D5104A200756969 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +234,6 @@
 			name = SSMartEcom;
 			packageProductDependencies = (
 				516856192D4F67AE00BA8C79 /* SDWebImageSwiftUI */,
-				5130817A2D5104A200756969 /* Reachability */,
 			);
 			productName = SSMartEcom;
 			productReference = 517CA4ED2D4E480D00A6A199 /* SSMartEcom.app */;
@@ -316,7 +313,6 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				516856182D4F67AE00BA8C79 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				513081792D5104A200756969 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 517CA4EE2D4E480D00A6A199 /* Products */;
@@ -707,14 +703,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		513081792D5104A200756969 /* XCRemoteSwiftPackageReference "Reachability" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/alecrim/Reachability.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.1;
-			};
-		};
 		516856182D4F67AE00BA8C79 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -726,11 +714,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5130817A2D5104A200756969 /* Reachability */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 513081792D5104A200756969 /* XCRemoteSwiftPackageReference "Reachability" */;
-			productName = Reachability;
-		};
 		516856192D4F67AE00BA8C79 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 516856182D4F67AE00BA8C79 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
